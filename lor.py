@@ -29,6 +29,12 @@ def train_logistic_regression(data_path, test_size=0.2, random_state=42):
     # Print accuracy
     print("Accuracy:", accuracy)
 
+    # Print some predicted and actual labels for verification
+    print("Sample Predicted Labels:", y_pred[:5])
+    print("Sample Actual Labels:", y_test[:5])
+
+    return model
+
 if __name__ == "__main__":
     # Check if dataset path is provided as argument
     if len(sys.argv) != 2:
@@ -39,5 +45,5 @@ if __name__ == "__main__":
     data_path = sys.argv[1]
 
     # Train logistic regression model
-    train_logistic_regression(data_path)
+    model = train_logistic_regression(data_path)
 
