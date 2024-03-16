@@ -1,3 +1,5 @@
+# lor.py
+
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -38,7 +40,7 @@ def train_logistic_regression(data_path, test_size=0.2, random_state=42):
 if __name__ == "__main__":
     # Check if dataset path is provided as argument
     if len(sys.argv) != 2:
-        print("Usage: python train_lr.py <dataset_path>")
+        print("Usage: python lor.py <dataset_path>")
         sys.exit(1)
 
     # Get dataset path from command line argument
